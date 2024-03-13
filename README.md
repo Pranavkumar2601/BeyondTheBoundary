@@ -1,3 +1,5 @@
+
+
 # Beyond The Boundary
 **Machine Learning Project**
 
@@ -30,6 +32,10 @@ This project is designed to analyze the performance of cricket players based on 
 **Model Training:** Train the KNN classification model using historical player performance data. Tune hyperparameters if necessary for better performance.
 
 **User Interface:** Launch the interactive user interface to receive player recommendations. Utilize provided IPython widgets to input player names and opposition teams, and view recommendations.
+## Screenshots
+![HomePage](https://github.com/Pranavkumar2601/BeyondTheBoundary/assets/83573068/85d2cf5c-5ba3-43e7-91b2-463bbb62e241)
+![FormPage](https://github.com/Pranavkumar2601/BeyondTheBoundary/assets/83573068/a00aaba8-2fc8-4dcb-882d-a56dae389dd1)
+![ResultPage](https://github.com/Pranavkumar2601/BeyondTheBoundary/assets/83573068/b5d9c424-eee0-47c1-8464-d16e3a323313)
 
 ## Technologies Used
 -- Python
