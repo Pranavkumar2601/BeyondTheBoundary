@@ -1,4 +1,4 @@
-# BeyondTheBoundary
+# Beyond The Boundary
 **Machine Learning Project**
 
 Cricket Player Performance Analysis and Recommendation System 
