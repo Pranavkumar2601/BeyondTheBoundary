@@ -43,7 +43,7 @@ a {
 .header:before {
   content: "";
   width: 100%;
-  height: 200%;
+  height: 300%;
   position: absolute;
   top: 0;
   left: 0;
@@ -52,11 +52,11 @@ a {
   backface-visibility: hidden;
   scale: (1, 1);
   transform: translateZ(0);
-  background: #1b2030 url(../css/images/Batting1.png) 50% 0 no-repeat;
+  background: #1b2030 url(../css/images/batting.png) 50% 0 no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   animation: grow 360s linear 10ms infinite;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1ms ease-in-out;
   z-index: -2;
 }
 
@@ -134,7 +134,7 @@ h1 {
   background-size: cover;
   box-shadow: 0 2px 3px rgba(55, 53, 53, 0.3);
   margin-bottom: 3px;
-  color: #4ab01bbd;
+  color: #d4760abd;
 }
 span {
   content: "\003E";
