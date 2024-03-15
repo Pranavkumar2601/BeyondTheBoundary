@@ -1,3 +1,5 @@
+/* Original CSS rules */
+
 body {
   background-color: #1d2227;
   height: 100vh;
@@ -11,7 +13,7 @@ div.container {
   justify-content: center;
 }
 
-/* form design */
+/* Form design */
 
 form {
   text-align: center;
@@ -26,7 +28,7 @@ label {
   text-align: center;
 }
 
-/* animation for the text to float up */
+/* Animation for the text to float up */
 
 label .label-text {
   color: #9b9b9b;
@@ -41,7 +43,7 @@ label .label-text {
   transition: all 0.3s;
 }
 
-/* remove the input box styling */
+/* Remove the input box styling */
 label input {
   background-color: transparent;
   border: 0;
@@ -56,14 +58,14 @@ label input {
   width: 200px;
 }
 
-/* once you click in the input the input width box animates */
+/* Once you click in the input the input width box animates */
 
 label input:focus {
   max-width: 100%;
   width: 400px;
 }
 
-/* the text floats up and turns white */
+/* The text floats up and turns white */
 
 label input:focus + .label-text {
   color: #f0f0f0;
@@ -75,7 +77,7 @@ label input:focus + .label-text {
   transform: translateY(-74px);
 }
 
-/* the text floats up during form validation */
+/* The text floats up during form validation */
 
 label input:valid + .label-text {
   font-size: 13px;
@@ -85,7 +87,7 @@ label input:valid + .label-text {
   transform: translateY(-74px);
 }
 
-/* button styling */
+/* Button styling */
 
 button {
   background: transparent;
@@ -147,4 +149,29 @@ h1 {
 
 h1 {
   animation: gradient-colors 5s ease-in-out infinite;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
 }

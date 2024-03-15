@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -42,6 +42,110 @@
             list="team-list"
             required
           />
+        </label>
+        <br /><br />
+        <button type="submit">Predict</button>
+      </form>
+    </div>
+  </body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Beyond The Boundary</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../static/css/images/favicon.ico"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="{{ url_for('home') }}">Beyond The Boundary</a></h1>
+      <form id="prediction-form" action="{{ url_for('form') }}" method="post">
+        <label for="player-name">
+          <span class="label-text">Player Name</span>
+          <input
+            type="text"
+            id="player-name"
+            name="player_name"
+            list="player-list"
+            required
+          />
+        </label>
+        <br /><br />
+        <label for="opposition-team">
+          <span class="label-text">Opposition Team</span>
+          <select id="opposition-team" name="opposition_team" required>
+            {% for team in opposition_teams %}
+            <option value="{{ team }}">{{ team }}</option>
+            {% endfor %}
+          </select>
+        </label>
+        <br /><br />
+        <button type="submit">Predict</button>
+      </form>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Beyond The Boundary</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../static/css/images/favicon.ico"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="{{ url_for('home') }}">Beyond The Boundary</a></h1>
+      <form id="prediction-form" action="{{ url_for('form') }}" method="post">
+        <label for="player-name">
+          <span class="label-text">Player Name</span>
+          <input
+            type="text"
+            id="player-name"
+            name="player_name"
+            list="player-list"
+            required
+          />
+          <datalist id="player-list">
+            {% for player in player_names %}
+            <option value="{{ player }}">{{ player }}</option>
+            {% endfor %}
+          </datalist>
+        </label>
+        <br /><br />
+        <label for="opposition-team">
+          <span class="label-text">Opposition Team</span>
+          <select id="opposition-team" name="opposition_team" required>
+            {% for team in opposition_teams %}
+            <option value="{{ team }}">{{ team }}</option>
+            {% endfor %}
+          </select>
         </label>
         <br /><br />
         <button type="submit">Predict</button>
